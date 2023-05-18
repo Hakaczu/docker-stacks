@@ -35,7 +35,7 @@ services:
     pid: host
     restart: unless-stopped
     volumes:
-      - '/:/host:ro,rslave'
+      - '/:/host:ro'
   cadvisor:
     # TODO: latest tag is not updated, check latest release https://github.com/google/cadvisor/releases 
     image: gcr.io/cadvisor/cadvisor:v0.47.0     
