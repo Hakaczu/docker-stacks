@@ -8,5 +8,6 @@ if docker pull portainer/portainer-ce:latest; then
     bash ./run-portainer.sh
 else
     echo "Error pulling new image"
+    docker tag portainer/portainer-ce:backup portainer/portainer-ce:latest
 fi
 
