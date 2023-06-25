@@ -1,2 +1,2 @@
 # docker-stacks
-Set of docker-compose files for different purposes 
+Set of docker-compose files and bash scripts for different purposes 
