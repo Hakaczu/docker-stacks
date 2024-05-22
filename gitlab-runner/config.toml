@@ -8,7 +8,7 @@ shutdown_timeout = 0
 [[runners]]
   name = "catalyst"
   url = "https://gitlab.com/"
-  id = id
+  id = 1234
   token = "token"
   executor = "docker"
   [runners.cache]
