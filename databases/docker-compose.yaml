@@ -1,0 +1,36 @@
+version: '3'
+
+name: databases
+
+volumes:
+  mariadb_data:
+    labels:
+      com.example.description: "mariadb dev volume"
+  postgres_data:
+    labels:
+      com.example.description: "postgres dev volume"
+
+services:
+  mariadb:
+    image: mariadb:11
+    container_name: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: devgru
+      MYSQL_USER: hakaczu
+      MYSQL_PASSWORD: hakaczu
+    ports:
+    - 3306:3306
+    volumes:
+      - mariadb_data:/var/lib/mysql
+  postgres:
+    image: postgres:16.3
+    container_name: postgres
+    environment:
+      POSTGRES_USER: hakaczu
+      POSTGRES_PASSWORD: hakaczu
+      POSTGRES_DB: devgru
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
