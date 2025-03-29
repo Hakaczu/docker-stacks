@@ -36,4 +36,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Archived Status
 
 **Note:** This repository is no longer maintained or developed. It has been archived and is provided as-is.
-```
